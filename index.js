@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 // koneksi ke db mongodb atlas
-dbConnection.then(() => console.log("berhasil connect")).catch((error) => console.log("error"));
+dbConnection.then(() => console.log("berhasil connect")).catch((error) => console.log("error", error));
 
 app.use(cors());
 app.use(express.json());
